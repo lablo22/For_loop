@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body style="background-color: #333;color:limegreen;">
+    
+    <script>
+        // Example 1
+        document.write("<h1>Example 1</h1>");
+        var n = 5;
+        var string = '';
+
+        for(var i = 0; i < n; i++)
+        {
+            for(var j = 0; j < n; j++)
+            {
+                string += "*\n";
+            }
+            string += "<br>";
+        }
+
+        document.write(string);
+
+        // Example 2
+        document.write("<h1>Example 2</h1>");
+
+        var n = 5;
+        var string = '';
+
+        for(var i = 0; i < n; i++)
+        {
+            for(var j = 0; j < n; j++)
+            {
+                if(i === 0 || i === n - 1)
+                {
+                    string += "*\n";
+                }
+                else
+                {
+                    if(j === 0 || j === n - 1)
+                    {
+                        string += "*\n";
+                    }
+                    else
+                    {
+                        string += " ";
+                    }
+                }
+            }
+            string += "<br>";
+        }
+
+        document.write(string);
+
+        // Example 3
+        document.write("<h1>Example 3</h1>");
+        var n = 5;
+        var string = "";
+        for (var i = 1; i <= n; i++) {
+        for (var j = 0; j < i; j++) {
+            string += "*\n";
+        }
+        string += "<br>";
+        }
+        document.write(string);
+
+
+        // Example 4
+        document.write("<h1>Example 4</h1>");
+
+        var n = 5;
+        var string = "";
+        for (var i = 0; i < n; i++) {
+        
+        for (var k = 0; k < n - i; k++) {
+            string += "*\n";
+        }
+        string += "<br>";
+        }
+        document.write(string);
+
+        // Example 5
+        document.write("<h1>Example 5</h1>");
+
+        var n = 5;
+        var string = "";
+        
+        for (var i = 1; i <= n; i++) {
+        
+        for (var j = n; j > i; j--) {
+            string += " ";
+        }
+        
+        for (var k = 0; k < i * 2 - 1; k++) {
+            string += "*";
+        }
+        string += "<br>";
+        }
+        
+        for (var i = 1; i <= n - 1; i++) {
+        
+        for (var j = 0; j < i; j++) {
+            string += " ";
+        }
+        
+        for (var k = (n - i) * 2 - 1; k > 0; k--) {
+            string += "*";
+        }
+        string += "<br>";
+        }
+        document.write(string);
+
+    </script>
+
+</body>
+</html>
